@@ -1,0 +1,8 @@
+<div *ngIf="list">
+  <h2>{{list.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{list.id}}</div>
+  <div>
+    <label for="list-name">List name: </label>
+    <input id="list-name" [(ngModel)]="list.name" placeholder="name">
+  </div>
+</div>
